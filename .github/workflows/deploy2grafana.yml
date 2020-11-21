@@ -33,3 +33,8 @@ jobs:
     - name: Terraform Apply
       id: apply
       run: terraform apply
+      env:
+        TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
+        TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
+        TF_VAR_access_key: ${{ secrets.TF_VAR_access_key }}
+        TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key }}
