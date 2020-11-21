@@ -14,7 +14,7 @@ jobs:
 
     - name: Terraform Init
       id: init
-      run: terraform init
+      run: terraform init -input=false
 
     - name: Terraform Validate
       id: validate
@@ -22,7 +22,7 @@ jobs:
 
     - name: Terraform Plan
       id: plan
-      run: terraform plan
+      run: terraform plan -out=tfplan -input=false
       continue-on-error: true
       env:
         TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
@@ -32,7 +32,7 @@ jobs:
 
     - name: Terraform Apply
       id: apply
-      run: terraform apply
+      run: terraform apply -input=false tfplan
       env:
         TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
