@@ -6,7 +6,7 @@ on:
     - main
 
 jobs:
-  build:
+  provisioning:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -24,6 +24,11 @@ jobs:
       id: plan
       run: terraform plan
       continue-on-error: true
+      env:
+        TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
+        TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
+        TF_VAR_access_key: ${{ secrets.TF_VAR_access_key }}
+        TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key }}
 
     - name: Terraform Apply
       id: apply
