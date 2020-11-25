@@ -8,12 +8,16 @@ resource "grafana_data_source" "cloudwatch" {
   name = "cloudwatch"
 
   json_data {
-    default_region = "us-east-1"
+    default_region = var.region
     auth_type      = "keys"
   }
 
   secure_json_data {
-    access_key = var.access_key
-    secret_key = var.secret_key
+    access_key = var.access_key_grafana
+    secret_key = var.secret_key_grafana
   }
+}
+
+resource "grafana_dashboard" "metrics" {
+  config_json = file("dashboards/aws-billing.json")
 }
