@@ -1,40 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_CLOUDWATCH",
-      "label": "CloudWatch",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "cloudwatch",
-      "pluginName": "CloudWatch"
-    }
-  ],
-  "__requires": [
-    {
-      "type": "datasource",
-      "id": "cloudwatch",
-      "name": "CloudWatch",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "7.3.3"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -52,7 +16,7 @@
   "editable": true,
   "gnetId": 13446,
   "graphTooltip": 0,
-  "id": null,
+  "id": 4,
   "links": [],
   "panels": [
     {
@@ -60,7 +24,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_CLOUDWATCH}",
+      "datasource": "CloudWatch",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -86,6 +50,8 @@
         "min": false,
         "rightSide": true,
         "show": true,
+        "sort": "current",
+        "sortDesc": true,
         "total": false,
         "values": true
       },
@@ -169,7 +135,7 @@
       }
     },
     {
-      "datasource": "${DS_CLOUDWATCH}",
+      "datasource": "CloudWatch",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -231,7 +197,7 @@
           "period": "",
           "queryType": "randomWalk",
           "refId": "A",
-          "region": "default",
+          "region": "us-east-1",
           "statistics": [
             "Sum"
           ]
@@ -253,7 +219,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_CLOUDWATCH}",
+      "datasource": "CloudWatch",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -379,5 +345,5 @@
   "timezone": "",
   "title": "AWS billing",
   "uid": "vrxILmAGk",
-  "version": 4
+  "version": 6
 }
