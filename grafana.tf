@@ -5,7 +5,7 @@ provider "grafana" {
 
 resource "grafana_data_source" "cloudwatch" {
   type = "cloudwatch"
-  name = "cloudwatch"
+  name = "CloudWatch"
 
   json_data {
     default_region = var.region
