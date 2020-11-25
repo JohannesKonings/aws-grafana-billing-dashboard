@@ -14,7 +14,10 @@ jobs:
 
     - name: Terraform Init
       id: init
-      run: terraform init -input=false
+      run: sh scripts/terraformInit.sh 
+      env:
+        AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Terraform Validate
       id: validate
@@ -29,6 +32,8 @@ jobs:
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
         TF_VAR_access_key: ${{ secrets.TF_VAR_access_key }}
         TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key }}
+        AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Terraform Apply
       id: apply
@@ -38,3 +43,5 @@ jobs:
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
         TF_VAR_access_key: ${{ secrets.TF_VAR_access_key }}
         TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key }}
+        AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
