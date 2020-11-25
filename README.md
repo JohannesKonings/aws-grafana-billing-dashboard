@@ -4,17 +4,26 @@
 
 A Grafana dashboard for AWS billing metrics which is deployable via Terraform.
 
-## local provisioning
+## enviroments variables
 
 Rename the file `.env_template` to `.env` and fill in the values for the env variables.
 
-Than run the Terraform commands.
+Than run the command `source .env`
+
+## Terraform S3 Backend
+
+Run script `sh scripts/createS3BackendBucket.sh` to create a S3 Bucket, which will store the state of Terraform.
+
+For that Bucket is a User with access and secret key necessary. That will be created with the script `sh scripts/createUser4S3BackendBucket.sh `.
+The credentials from the script response needs to put into the .env file.
+
+## local provisioning
+
+Run the Terraform commands.
 
 ## Terraform
 
-`source .env`
-
-`terraform init`
+`sh scripts/terraformInit.sh`
 
 `terraform validate`
 
