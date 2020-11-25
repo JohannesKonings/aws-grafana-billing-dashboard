@@ -18,8 +18,8 @@ jobs:
       env:
         TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
-        TF_VAR_access_key: ${{ secrets.TF_VAR_access_key_grafana }}
-        TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key_grafana }}
+        TF_VAR_access_key_grafana: ${{ secrets.TF_VAR_access_key_grafana }}
+        TF_VAR_secret_key_grafana: ${{ secrets.TF_VAR_secret_key_grafana }}
         TF_VAR_region: ${{ secrets.TF_VAR_region }}
         TF_VAR_s3_bucket_name: ${{ secrets.TF_VAR_s3_bucket_name }}
         TF_VAR_backend_key: ${{ secrets.TF_VAR_backend_key }}
@@ -37,8 +37,8 @@ jobs:
       env:
         TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
-        TF_VAR_access_key: ${{ secrets.TF_VAR_access_key_grafana }}
-        TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key_grafana }}
+        TF_VAR_access_key_grafana: ${{ secrets.TF_VAR_access_key_grafana }}
+        TF_VAR_secret_key_grafana: ${{ secrets.TF_VAR_secret_key_grafana }}
         TF_VAR_region: ${{ secrets.TF_VAR_region }}
         TF_VAR_s3_bucket_name: ${{ secrets.TF_VAR_s3_bucket_name }}
         TF_VAR_backend_key: ${{ secrets.TF_VAR_backend_key }}
@@ -52,8 +52,8 @@ jobs:
       env:
         TF_VAR_grafana_url: ${{ secrets.TF_VAR_grafana_url }}
         TF_VAR_grafana_api_key: ${{ secrets.TF_VAR_grafana_api_key }}
-        TF_VAR_access_key: ${{ secrets.TF_VAR_access_key_grafana }}
-        TF_VAR_secret_key: ${{ secrets.TF_VAR_secret_key_grafana }}
+        TF_VAR_access_key_grafana: ${{ secrets.TF_VAR_access_key_grafana }}
+        TF_VAR_secret_key_grafana: ${{ secrets.TF_VAR_secret_key_grafana }}
         TF_VAR_region: ${{ secrets.TF_VAR_region }}
         TF_VAR_s3_bucket_name: ${{ secrets.TF_VAR_s3_bucket_name }}
         TF_VAR_backend_key: ${{ secrets.TF_VAR_backend_key }}
