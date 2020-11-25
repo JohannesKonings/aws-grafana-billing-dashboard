@@ -95,7 +95,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "accounts",
+      "title": "Accounts",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -205,7 +205,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "total",
+      "title": "Total",
       "transformations": [
         {
           "id": "merge",
@@ -290,7 +290,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "services",
+      "title": "Services",
       "tooltip": {
         "shared": true,
         "sort": 0,
