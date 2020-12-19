@@ -16,6 +16,7 @@ Run script `sh scripts/createS3BackendBucket.sh` to create a S3 Bucket, which wi
 
 For that Bucket is a User with access and secret key necessary. That will be created with the script `sh scripts/createUser4S3BackendBucket.sh `.
 The credentials from the script response needs to put into the .env file.
+The script `createAndAttachS3BackendBucketPolicy.sh` creates and assigns the appropriate policy.
 
 ## local provisioning
 
