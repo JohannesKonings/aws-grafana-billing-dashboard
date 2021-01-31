@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": 13446,
   "graphTooltip": 0,
-  "id": 4,
+  "id": 3,
   "links": [],
   "panels": [
     {
@@ -57,12 +57,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.3",
+      "pluginVersion": "7.3.7",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -111,7 +111,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:322",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -120,7 +119,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:323",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -181,7 +179,7 @@
         "showThresholdLabels": true,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.3.3",
+      "pluginVersion": "7.3.7",
       "targets": [
         {
           "alias": "",
@@ -252,12 +250,12 @@
       },
       "lines": true,
       "linewidth": 1,
-      "nullPointMode": "null",
+      "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.3.3",
+      "pluginVersion": "7.3.7",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -306,7 +304,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:409",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -315,7 +312,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:410",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -344,6 +340,6 @@
   "timepicker": {},
   "timezone": "",
   "title": "AWS billing",
-  "uid": "vrxILmAGk",
-  "version": 6
+  "uid": "XVNBjyTGk",
+  "version": 2
 }
