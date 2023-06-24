@@ -1,13 +1,18 @@
-name: 'deploy to grafana'
+name: 'terraform: deploy to grafana'
 
 on:
   push:
     branches:
     - main
+    paths:
+      - terraform/**
 
 jobs:
   provisioning:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./terraform
     steps:
     - uses: actions/checkout@v2
     - uses: hashicorp/setup-terraform@v1
