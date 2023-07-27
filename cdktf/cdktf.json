@@ -1,0 +1,11 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "0bf56648-a4ff-4d80-8de7-52c6bd9589cd",
+  "sendCrashReports": "true",
+  "terraformProviders": [
+    "grafana/grafana@~> 2.1"
+  ],
+  "terraformModules": [],
+  "context": {}
+}
