@@ -1,11 +1,12 @@
 {
-  "name": "cdktf",
+  "name": "cdktf-grafana",
   "version": "1.0.0",
   "main": "main.js",
   "types": "main.ts",
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
+    "cdktf": "cdktf",
     "get": "cdktf get",
     "build": "tsc",
     "synth": "cdktf synth",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "cdktf": "^0.17.3",
+    "cdktf-cli": "^0.17.3",
     "constructs": "^10.2.69"
   },
   "devDependencies": {
