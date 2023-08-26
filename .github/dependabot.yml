@@ -1,9 +1,16 @@
 version: 2
 updates:
-  # Enable version updates for npm
+  # cdktf
   - package-ecosystem: "terraform"
-    # Look for `package.json` and `lock` files in the `root` directory
-    directory: "/"
-    # Check the npm registry for updates every day (weekdays)
+    directory: "/cdktf"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/cdktf"
+    schedule:
+      interval: "daily"
+  # terraform
+  - package-ecosystem: "terraform"
+    directory: "/terraform"
     schedule:
       interval: "daily"
